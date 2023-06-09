@@ -1,0 +1,60 @@
+<h1>Pokedex</h1>
+
+<input type="text" [(ngModel)]="nombre_input">
+<button (click)="buscar()">Buscar</button>
+
+<br>
+
+<img src="{{ imagen }}" alt="">
+<br><strong>Nombre: {{ nombre }}</strong>
+<br><strong>Altura: {{ altura }}</strong> 
+<br><strong>Peso: {{ peso }}</strong>
+<br><strong>Habilidad: {{ habilidade }}</strong>
+<br><strong>Movimiento: {{ movimiento}}</strong>
+
+<h2>Listado de pokemones</h2>
+<ul>
+   <li *ngFor="let pokemon of pokemones" (click)="abrir(pokemon.name)">{{ pokemon.name }}</li>
+</ul>
+
+
+
+
+
+
+
+
+<!-- <h1>Clientes</h1>
+
+<button (click)="registrar_cliente()">Registrar clientes</button>
+
+<table width="100%" border="1">
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+    </tr>
+    <tr *ngFor="let data of clientes">
+        <td>{{ data.nombres }}</td>
+        <td>{{ data.apellidos }}</td>
+
+    </tr>
+
+
+    <h1>Trabajador</h1>
+
+<button (click)="registrar_trabajador()">Registrar Trabajador</button>
+
+<table width="100%" border="2">
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+    </tr>
+    <tr *ngFor="let data of trabajadores">
+        <td>{{ data.nombre_completo }}</td>
+        <td>{{ data.dni }}</td>
+
+    </tr>
+ -->
+
+
+
